@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Absensi</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+    <script src="js/jquery-3.6.3.min.js"> </script>
+    <script src="js/webcam.min.js"> </script>
+    <script src="js/face-api.min.js"></script>
+
+    <style>
+    .hide {
+        display: none
+    }
+    canvas{
+        position:absolute ;
+        top:160px;
+        left:20px;
+    }
+
+            body {
+                background-color: #000;
+                color: white;
+            /* margin: 0; */
+            /* padding: 0; */
+            /*width: 100vw;
+            height: 100vh;
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; */
+        }
+    .jumbotron {
+        background-color: rgb(55, 55, 55) ;
+    }    
+
+    .hide {
+        display: none
+    }
+    canvas{
+            position: absolute;
+        }
+        .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side{
+            background:#eee
+
+        }
+    </style>
+
+</head>
+<body class="hold-transition skin-blue layout-top-nav">
+    <div class="row">
+    <div class="col col-lg-12">
+        <center><h1>FACE DETECTION</h1></center>
+        <center><h4>JURUSAN TEKNIK KOMPUTER DAN JARINGAN</h4></center>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col col-md-8">
+        <div class="jumbotron">
+            <div class="row">
+
+            <video style="" id="videoInput" width="800" height="500" muted controls>
+            </video>
+            <canvas style="display:none;"></canvas>
+
+            <div id="my_camera" class="hide"></div>
+            </div>
+            </div>
+
+
+    </div>
+    <div class="col col-md-4">
+        <div class="jumbotron">
+
+        <textarea name="" id="log" style="background:#000;color:white;width:100%;height:500px"></textarea>
+    </div>
+    </div>
+    </div>
+    </div>
+    </script>
+    <script defer async src="js/script.js"></script>
+
+    </body>
+    </html>
